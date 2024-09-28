@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #8a2be2;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --accent-color: #ff69b4;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bene {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ben {
+    flex-basis: 30%;
+}
+
+.ben img {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+#como-funciona {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+#como-funciona h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex-basis: calc(33.333% - 2rem);
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.step img {
+    margin-bottom: 1.5rem;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.step h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#beneficios ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+#beneficios li {
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+}
