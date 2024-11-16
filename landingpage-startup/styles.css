@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #f4f4f4;
-  --primary-color-dark: #6a0dad;
+  --primary-color-dark: #dd00d9;
   --secondary-color: #f9fafe;
   --text-color: #333333;
   --white: #ffffff;
@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background-color: #6a0dad;
+  background-color: #dd00d9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -148,7 +148,7 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #5a0b8d;
+  
   transform: translateY(-2px);
 }
 
@@ -205,6 +205,12 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+}
+
+#prototipo h3{
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .step {
@@ -270,4 +276,68 @@ footer {
   nav ul {
     display: none;
   }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 850px) {
+  .video-container {
+      max-width: 95%;
+      margin: 1rem auto;
+  }
+}
+
+#equipe {
+  background-color: var(--primary-color-dark);
+  color: var(--white);
+  padding: 4rem 2rem;
+}
+
+#equipe h2 {
+  color: var(--white);
+}
+
+#equipe p {
+  color: var(--white);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+#visao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+#visao p {
+  color: var(--primary-color-dark);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#Contato{
+  text-align: center;
 }
